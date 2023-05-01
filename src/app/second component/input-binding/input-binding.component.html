@@ -6,7 +6,9 @@
     (input)="changeText($event)"
   />
 
-  <p>Your Name is: {{ name }}</p>
+  <p>
+    Your Name is: <span>{{ name }}</span>
+  </p>
 
   <input type="button" value="reset" (click)="clear()" />
 </section>
