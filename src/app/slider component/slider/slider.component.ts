@@ -21,6 +21,8 @@ export class SliderComponent {
   ];
   src = '0';
 
+  interval: any = {};
+
   next() {
     this.src =
       parseInt(this.src) == this.images.length - 1
@@ -30,5 +32,15 @@ export class SliderComponent {
 
   prev() {
     this.src = parseInt(this.src) == 0 ? '0' : `${parseInt(this.src) - 1}`;
+  }
+
+  repeat() {
+    this.interval = setInterval(() => {
+      this.src = ((parseInt(this.src) + 1) % this.images.length).toString();
+    }, 1000);
+  }
+
+  clear() {
+    clearInterval(this.interval);
   }
 }
