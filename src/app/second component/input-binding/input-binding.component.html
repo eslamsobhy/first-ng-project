@@ -1,0 +1,12 @@
+<section>
+  <input
+    type="text"
+    placeholder="Enter your name"
+    value="{{ name }}"
+    (input)="changeText($event)"
+  />
+
+  <p>Your Name is: {{ name }}</p>
+
+  <input type="button" value="reset" (click)="clear()" />
+</section>
