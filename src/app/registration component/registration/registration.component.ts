@@ -18,14 +18,14 @@ export class RegistrationComponent {
   @Output() getEvent = new EventEmitter();
 
   add() {
-    if (this.name && this.age && +this.age > 0) {
+    if (this.name && !isFinite(+this.name) && this.age && +this.age > 0) {
       this.getEvent.emit({ name: this.name, age: this.age }); //fire the event with the data
       this.nameValid = true;
       this.ageValid = true;
       // clear the input fields
       this.name = '';
       this.age = '';
-    } else if (!this.name) {
+    } else if (!this.name || isFinite(+this.name)) {
       this.nameValid = false;
     } else {
       this.nameValid = true;
