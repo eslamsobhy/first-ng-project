@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'first-ng-project';
+  students: { name: string; age: number }[] = [];
+
+  getData(data: { name: string; age: number }) {
+    this.students.push(data);
+    console.log(this.students);
+  }
 }

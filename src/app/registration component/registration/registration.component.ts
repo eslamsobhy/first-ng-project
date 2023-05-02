@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-registration',
@@ -10,7 +10,10 @@ export class RegistrationComponent {
   name = '';
   age = '';
 
+  // create my event
+  @Output() getEvent = new EventEmitter();
+
   add() {
-    console.log(this.name, this.age);
+    this.getEvent.emit({ name: this.name, age: this.age }); //fire the event with the data
   }
 }
