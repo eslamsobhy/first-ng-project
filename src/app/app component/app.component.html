@@ -3,7 +3,6 @@
 <!-- <app-input-binding></app-input-binding> -->
 <!-- <app-slider></app-slider> -->
 <div class="container">
-  <app-registration [name]="parentName"></app-registration>
-  <app-students (getEvent)="getData($event)"></app-students>
-  <p>{{ dataFromChild }}</p>
+  <app-registration></app-registration>
+  <app-students></app-students>
 </div>

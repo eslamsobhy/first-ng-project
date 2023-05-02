@@ -7,11 +7,10 @@ import { Component, EventEmitter, Input } from '@angular/core';
 })
 export class RegistrationComponent {
   // studentObj: object = {};
-  // myEvent = new EventEmitter();
-  // name = '';
-  // age = '';
+  name = '';
+  age = '';
 
-  // add() {}
-
-  @Input() name: string = ''; //receiving the data from parent
+  add() {
+    console.log(this.name, this.age);
+  }
 }
