@@ -22,6 +22,9 @@ export class RegistrationComponent {
       this.getEvent.emit({ name: this.name, age: this.age }); //fire the event with the data
       this.nameValid = true;
       this.ageValid = true;
+      // clear the input fields
+      this.name = '';
+      this.age = '';
     } else if (!this.name) {
       this.nameValid = false;
     } else {
