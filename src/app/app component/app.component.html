@@ -4,5 +4,5 @@
 <!-- <app-slider></app-slider> -->
 <div class="container">
   <app-registration (getEvent)="getData($event)"></app-registration>
-  <app-students></app-students>
+  <app-students [studentsData]="students"></app-students>
 </div>

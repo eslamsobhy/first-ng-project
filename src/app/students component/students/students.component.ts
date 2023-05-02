@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-students',
@@ -7,14 +7,5 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class StudentsComponent {
   data = 'data from child!';
-
-  // 1)define the event
-  @Output() getEvent = new EventEmitter();
-
-  // 2) when will the event fire?
-  constructor() {
-    setTimeout(() => {
-      this.getEvent.emit(this.data);
-    }, 2000);
-  }
+  @Input() studentsData: { name: string; age: number }[] = [];
 }

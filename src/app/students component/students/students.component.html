@@ -6,14 +6,18 @@
       <th>Age</th>
     </thead>
     <tbody>
-      <tr>
+      <tr *ngFor="let s of studentsData">
+        <td>{{ s.name }}</td>
+        <td>{{ s.age }}</td>
+      </tr>
+      <!-- <tr>
         <td>Ahmed</td>
         <td>34</td>
       </tr>
       <tr>
         <td>Ahmed</td>
         <td>34</td>
-      </tr>
+      </tr> -->
     </tbody>
   </table>
 </section>
