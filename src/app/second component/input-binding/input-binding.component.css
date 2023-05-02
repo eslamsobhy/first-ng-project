@@ -6,19 +6,6 @@ section {
   align-items: center;
 }
 
-input[type="text"] {
-  width: 50%;
-  border: 1px solid #eee;
-  height: 40px;
-  margin: 40px auto;
-  padding: 0 10px;
-  border-radius: 15px;
-}
-
-input[type="text"]:focus {
-  border-color: #aaa;
-}
-
 p {
   font-weight: bold;
 }
@@ -26,22 +13,4 @@ p {
 p span {
   font-weight: normal;
   color: rgba(0, 0, 0, 0.75);
-}
-
-input[type="button"] {
-  border: none;
-  width: 80px;
-  height: 40px;
-  padding: 10px;
-  border-radius: 15px;
-  background-color: violet;
-  text-transform: capitalize;
-  /* font-weight: bold; */
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-
-input[type="button"]:hover {
-  background-color: rgb(255, 94, 255);
 }

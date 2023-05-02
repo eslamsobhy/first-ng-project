@@ -1,0 +1,16 @@
+.students-container {
+  margin-top: 40px;
+}
+
+table {
+  width: 600px;
+  border: 1px solid #aaa;
+}
+
+td,
+th,
+tr {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 10px;
+}
