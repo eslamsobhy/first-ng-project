@@ -4,5 +4,6 @@
 <!-- <app-slider></app-slider> -->
 <div class="container">
   <app-registration [name]="parentName"></app-registration>
-  <app-students></app-students>
+  <app-students (getEvent)="getData($event)"></app-students>
+  <p>{{ dataFromChild }}</p>
 </div>

@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'first-ng-project';
   parentName = 'App';
+
+  dataFromChild = '';
+
+  getData(data: any) {
+    this.dataFromChild = data;
+  }
 }
