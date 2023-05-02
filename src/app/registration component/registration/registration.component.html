@@ -1,6 +1,16 @@
 <h1>Registration</h1>
 <section class="form">
-  <input type="text" placeholder="Enter your name" [(ngModel)]="name" />
-  <input type="text" placeholder="Enter your age" [(ngModel)]="age" />
+  <input
+    type="text"
+    [ngClass]="{ error: !nameValid }"
+    placeholder="Enter your name"
+    [(ngModel)]="name"
+  />
+  <input
+    type="text"
+    [ngClass]="{ error: !ageValid }"
+    placeholder="Enter your age"
+    [(ngModel)]="age"
+  />
   <input type="button" value="Add" (click)="add()" />
 </section>

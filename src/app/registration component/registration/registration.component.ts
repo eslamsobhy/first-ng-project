@@ -10,10 +10,23 @@ export class RegistrationComponent {
   name = '';
   age = '';
 
+  nameValid = true;
+
+  ageValid = true;
+
   // create my event
   @Output() getEvent = new EventEmitter();
 
   add() {
-    this.getEvent.emit({ name: this.name, age: this.age }); //fire the event with the data
+    if (this.name && this.age && +this.age > 0) {
+      this.getEvent.emit({ name: this.name, age: this.age }); //fire the event with the data
+      this.nameValid = true;
+      this.ageValid = true;
+    } else if (!this.name) {
+      this.nameValid = false;
+    } else {
+      this.nameValid = true;
+      this.ageValid = false;
+    }
   }
 }

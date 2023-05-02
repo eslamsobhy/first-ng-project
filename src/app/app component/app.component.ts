@@ -10,7 +10,9 @@ export class AppComponent {
   students: { name: string; age: number }[] = [];
 
   getData(data: { name: string; age: number }) {
+    // if (data.name && data.age) {
+    //   this.students.push(data);
+    // }
     this.students.push(data);
-    console.log(this.students);
   }
 }
