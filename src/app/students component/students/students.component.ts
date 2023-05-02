@@ -6,6 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./students.component.css'],
 })
 export class StudentsComponent {
-  data = 'data from child!';
   @Input() studentsData: { name: string; age: number }[] = [];
 }

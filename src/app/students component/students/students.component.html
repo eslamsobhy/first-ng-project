@@ -1,4 +1,4 @@
-<section class="students-container">
+<section class="students-container" *ngIf="studentsData.length > 0">
   <h1>Students Data</h1>
   <table>
     <thead>
@@ -10,14 +10,6 @@
         <td>{{ s.name }}</td>
         <td>{{ s.age }}</td>
       </tr>
-      <!-- <tr>
-        <td>Ahmed</td>
-        <td>34</td>
-      </tr>
-      <tr>
-        <td>Ahmed</td>
-        <td>34</td>
-      </tr> -->
     </tbody>
   </table>
 </section>
