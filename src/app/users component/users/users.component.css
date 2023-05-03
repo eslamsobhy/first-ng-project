@@ -1,0 +1,17 @@
+.students-container {
+  margin: 40px auto;
+}
+
+table {
+  width: 600px;
+  margin: 40px auto;
+  border: 1px solid #aaa;
+}
+
+td,
+th,
+tr {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 10px;
+}
