@@ -7,6 +7,8 @@ import { InputBindingComponent } from './second component/input-binding/input-bi
 import { SliderComponent } from './slider component/slider/slider.component';
 import { RegistrationComponent } from './registration component/registration/registration.component';
 import { StudentsComponent } from './students component/students/students.component';
+import { UsersComponent } from './users component/users/users.component';
+import { LoginComponent } from './login component/login/login.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -17,6 +19,8 @@ import { FormsModule } from '@angular/forms';
     SliderComponent,
     RegistrationComponent,
     StudentsComponent,
+    UsersComponent,
+    LoginComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
