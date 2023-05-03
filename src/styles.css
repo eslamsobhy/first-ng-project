@@ -7,7 +7,7 @@ h1 {
   color: rgba(0, 0, 0, 0.75);
   text-align: center;
 }
-
+/*
 input[type="text"] {
   width: 50%;
   border: 1px solid #eee;
@@ -16,11 +16,14 @@ input[type="text"] {
   padding: 0 10px;
   border-radius: 15px;
 }
-
+*/
+/*
 input[type="text"]:focus {
   border-color: #aaa;
 }
+*/
 
+/*
 input[type="button"] {
   border: none;
   width: 80px;
@@ -29,12 +32,15 @@ input[type="button"] {
   border-radius: 15px;
   background-color: violet;
   text-transform: capitalize;
-  /* font-weight: bold; */
+  */
+/* font-weight: bold; */
+/*
   font-size: 1.2rem;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
-}
-
+}*/
+/*
 input[type="button"]:hover {
   background-color: rgb(255, 94, 255);
 }
+*/
