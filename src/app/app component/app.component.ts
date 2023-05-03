@@ -15,4 +15,10 @@ export class AppComponent {
     // }
     this.students.push(data);
   }
+
+  loginData = {};
+  getLoginData(data: object) {
+    this.loginData = data;
+    // console.log(this.loginData);
+  }
 }

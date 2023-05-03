@@ -1,15 +1,17 @@
-<section class="students-container">
+<section class="students-container" *ngIf="usersData.length > 0">
   <h1>Users Data</h1>
   <table>
     <thead>
       <th>Name</th>
+      <th>Email</th>
       <th>Age</th>
     </thead>
     <tbody>
-      <!-- <tr *ngFor="let s of studentsData">
+      <tr *ngFor="let s of usersData">
         <td>{{ s.name }}</td>
+        <td>{{ s.email }}</td>
         <td>{{ s.age }}</td>
-      </tr> -->
+      </tr>
     </tbody>
   </table>
 </section>
