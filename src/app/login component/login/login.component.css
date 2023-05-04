@@ -113,7 +113,8 @@ i {
 }
 
 .input-field input:focus,
-.input-field input:valid {
+/* .input-field input:valid, */
+.ng-valid {
   border-bottom: 1px solid #743ae1;
 }
 
@@ -136,4 +137,12 @@ i {
 .input-field .submit:hover {
   background-color: rgba(37, 95, 156, 0.8);
   color: #fff;
+}
+
+.ng-invalid {
+  border-bottom: 1px solid rgb(200, 0, 0);
+}
+
+form {
+  border: none !important;
 }

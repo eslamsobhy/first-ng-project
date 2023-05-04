@@ -9,7 +9,7 @@ import { RegistrationComponent } from './registration component/registration/reg
 import { StudentsComponent } from './students component/students/students.component';
 import { UsersComponent } from './users component/users/users.component';
 import { LoginComponent } from './login component/login/login.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,7 @@ import { FormsModule } from '@angular/forms';
     UsersComponent,
     LoginComponent,
   ],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

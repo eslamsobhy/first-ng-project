@@ -9,16 +9,16 @@
         </div>
       </div>
       <div class="col-md-6 right">
-        <div class="input-box">
+        <form [formGroup]="myValidations" class="input-box">
           <header>Create a user</header>
           <div class="input-field">
             <input
               type="text"
               id="name"
-              class="input"
+              class="input ng-valid"
               required
               autocomplete="off"
-              [(ngModel)]="name"
+              formControlName="name"
             />
             <label for="name">Name</label>
           </div>
@@ -26,10 +26,10 @@
             <input
               type="text"
               id="email"
-              class="input"
+              class="input ng-valid"
               required
               autocomplete="off"
-              [(ngModel)]="email"
+              formControlName="email"
             />
             <label for="email">Email</label>
           </div>
@@ -37,17 +37,17 @@
             <input
               type="text"
               id="age"
-              class="input"
+              class="input ng-valid"
               required
               autocomplete="off"
-              [(ngModel)]="age"
+              formControlName="age"
             />
             <label for="age">Age</label>
           </div>
           <div class="input-field">
             <input type="submit" (click)="join()" class="submit" value="Join" />
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>
