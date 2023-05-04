@@ -15,7 +15,14 @@
             <input
               type="text"
               id="name"
-              class="input ng-valid"
+              class="input"
+              [ngStyle]="{
+                'border-color': validName
+                  ? 'green'
+                  : nameExists
+                  ? 'red'
+                  : '#743ae1'
+              }"
               required
               autocomplete="off"
               formControlName="name"
@@ -26,7 +33,14 @@
             <input
               type="text"
               id="email"
-              class="input ng-valid"
+              class="input"
+              [ngStyle]="{
+                'border-color': validEmail
+                  ? 'green'
+                  : emailExists
+                  ? 'red'
+                  : '#743ae1'
+              }"
               required
               autocomplete="off"
               formControlName="email"
@@ -37,7 +51,14 @@
             <input
               type="text"
               id="age"
-              class="input ng-valid"
+              class="input"
+              [ngStyle]="{
+                'border-color': validAge
+                  ? 'green'
+                  : ageExists
+                  ? 'red'
+                  : '#743ae1'
+              }"
               required
               autocomplete="off"
               formControlName="age"

@@ -11,20 +11,31 @@ export class LoginComponent {
   // email = '';
   // age = '';
 
-  // get validName() {
-  //   return this.myValidations.controls.name.valid;
-  // }
-  // get validEmail() {
-  //   return this.myValidations.controls.email.valid;
-  // }
-  // get validAge() {
-  //   return this.myValidations.controls.age.valid;
-  // }
+  get nameExists() {
+    return this.myValidations.controls.name.value;
+  }
+  get emailExists() {
+    return this.myValidations.controls.email.value;
+  }
+  get ageExists() {
+    return this.myValidations.controls.age.value;
+  }
+
+  get validName() {
+    return this.myValidations.controls.name.valid;
+  }
+  get validEmail() {
+    return this.myValidations.controls.email.valid;
+  }
+  get validAge() {
+    return this.myValidations.controls.age.valid;
+  }
 
   myValidations = new FormGroup({
     name: new FormControl('', [
       Validators.required,
       Validators.pattern('^[a-zA-Z][a-zA-Z0-9 ]*$'),
+      Validators.minLength(3),
     ]),
     email: new FormControl('', [
       Validators.required,
@@ -47,7 +58,7 @@ export class LoginComponent {
     if (this.myValidations.valid) {
       let data = this.myValidations.value;
       this.dataEvent.emit(data);
-      console.log(this.myValidations);
+      // console.log(this.myValidations);
     }
 
     // clear the input fields
