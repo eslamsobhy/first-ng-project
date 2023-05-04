@@ -58,7 +58,11 @@ export class LoginComponent {
     if (this.myValidations.valid) {
       let data = this.myValidations.value;
       this.dataEvent.emit(data);
-      // console.log(this.myValidations);
+
+      // clearing the input fields
+      this.myValidations.controls.name.setValue('');
+      this.myValidations.controls.email.setValue('');
+      this.myValidations.controls.age.setValue('');
     }
 
     // clear the input fields
