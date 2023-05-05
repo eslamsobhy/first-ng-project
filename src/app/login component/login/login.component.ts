@@ -11,6 +11,12 @@ export class LoginComponent {
   // email = '';
   // age = '';
 
+  rowClass = 'row';
+  sideImageClass = 'col-md-6 side-image';
+  rightClass = 'col-md-6 right';
+  logoClass = '';
+  textClass = 'text';
+
   get nameExists() {
     return this.myValidations.controls.name.value;
   }
@@ -63,6 +69,13 @@ export class LoginComponent {
       this.myValidations.controls.name.setValue('');
       this.myValidations.controls.email.setValue('');
       this.myValidations.controls.age.setValue('');
+
+      // Altering the classes
+      this.rowClass = 'row row-updated';
+      this.sideImageClass = 'col-12 side-image side-image-updated';
+      this.rightClass = 'col-12 right';
+      this.logoClass = 'logo-updated';
+      this.textClass = 'text text-updated';
     }
 
     // clear the input fields

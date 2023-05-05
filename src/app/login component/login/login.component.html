@@ -1,14 +1,18 @@
 <div class="wrapper">
   <div class="container main">
-    <div class="row">
-      <div class="col-md-6 side-image">
+    <div [class]="rowClass">
+      <div [class]="sideImageClass">
         <!-- Image -->
-        <img src="./assets/images/angular-logo-bold.png" alt="" />
-        <div class="text">
+        <img
+          src="./assets/images/angular-logo-bold.png"
+          [class]="logoClass"
+          alt=""
+        />
+        <div [class]="textClass">
           <p>Join the community of MEARN Ninja's - <i>ITI</i></p>
         </div>
       </div>
-      <div class="col-md-6 right">
+      <div [class]="rightClass">
         <form [formGroup]="myValidations" class="input-box">
           <header>Create a user</header>
           <div class="input-field">

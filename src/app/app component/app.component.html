@@ -5,6 +5,8 @@
 <!-- <div class="container"> -->
 <!-- <app-registration (getEvent)="getData($event)"></app-registration>
   <app-students [studentsData]="students"></app-students> -->
-<app-login (dataEvent)="getLoginData($event)"></app-login>
-<app-users [loginDataFromParent]="loginData"></app-users>
+<div class="page-container">
+  <app-login (dataEvent)="getLoginData($event)"></app-login>
+  <app-users [loginDataFromParent]="loginData"></app-users>
+</div>
 <!-- </div> -->
